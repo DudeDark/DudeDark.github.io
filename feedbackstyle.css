@@ -1,0 +1,109 @@
+body {
+min-height: 100vh;
+background: url('Webback.jpg');
+background-size: cover;
+background-position: center;
+text-align: center;
+color: ffffff;
+font-size: 30px;
+
+}
+
+h1 {
+text-align: center;
+position: fixed;
+top: 150px;
+left: 0;
+width: 100%;
+font-family: Poppins, sans-serif;
+color: ffffff;
+font-size: 87px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+background: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+font-family: "Poppins", sans-serif;
+
+}
+
+.navbar a {
+font-size: 27px;
+color: #ffffff;
+font-weight: 500;
+text-decoration: none;
+margin-left: 40px;
+position: relative;
+}
+
+.navbar a::before {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+background: #ffffff;
+transition: .3s;
+
+
+}
+
+.navbar a:hover:before {
+width: 100%;
+
+}
+
+.rating-box {
+    position: fixed;
+background: #ffffff;
+padding: 25px 50px 35px;
+border-radius: 25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+left: 750px;
+}
+
+.rating-box header {
+font-size: 22px;
+color: #808000;
+font-weight: 500;
+margin-bottom: 20px;
+text-align: center;
+
+}
+
+.rating-box .stars {
+display: flex;
+align-items: center;
+gap: 25px;
+
+}
+
+.stars i {
+color: #e6e6e6;
+font-size: 35px;
+cursor: pointer;
+transition: color 0.2s ease;
+
+}
+
+.stars i.active {
+color: #ff9c1a;
+
+}
